@@ -32,7 +32,6 @@ class SecondScreen extends StatelessWidget {
                 return ElevatedButton(
                   onPressed: () {
                     subjectProvider.updateSubject(_controller.text);
-                    // Pass the updated subject text back to the first screen
                     Navigator.pop(context, _controller.text);
                   },
                   style: ElevatedButton.styleFrom(
